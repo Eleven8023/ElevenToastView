@@ -15,6 +15,9 @@
 		A30B16881CFF0A7900BF8108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30B16861CFF0A7900BF8108 /* LaunchScreen.storyboard */; };
 		A30B16931CFF0A7A00BF8108 /* ElevenToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B16921CFF0A7A00BF8108 /* ElevenToastTests.m */; };
 		A30B169E1CFF0A7A00BF8108 /* ElevenToastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B169D1CFF0A7A00BF8108 /* ElevenToastUITests.m */; };
+		A30B16AD1CFF0AF400BF8108 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = A30B16AC1CFF0AF400BF8108 /* loading.gif */; };
+		A30B16B21CFF0B8F00BF8108 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B16AE1CFF0B8F00BF8108 /* UIImage+GIF.m */; };
+		A30B16B31CFF0B8F00BF8108 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B16B11CFF0B8F00BF8108 /* UIView+Toast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		A30B16991CFF0A7A00BF8108 /* ElevenToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevenToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30B169D1CFF0A7A00BF8108 /* ElevenToastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElevenToastUITests.m; sourceTree = "<group>"; };
 		A30B169F1CFF0A7A00BF8108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30B16AC1CFF0AF400BF8108 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		A30B16AE1CFF0B8F00BF8108 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		A30B16AF1CFF0B8F00BF8108 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		A30B16B01CFF0B8F00BF8108 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		A30B16B11CFF0B8F00BF8108 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		A30B166C1CFF0A7900BF8108 = {
 			isa = PBXGroup;
 			children = (
+				A30B16AB1CFF0AA800BF8108 /* ElevenToast */,
 				A30B16771CFF0A7900BF8108 /* ElevenToast */,
 				A30B16911CFF0A7A00BF8108 /* ElevenToastTests */,
 				A30B169C1CFF0A7A00BF8108 /* ElevenToastUITests */,
@@ -138,6 +147,19 @@
 				A30B169F1CFF0A7A00BF8108 /* Info.plist */,
 			);
 			path = ElevenToastUITests;
+			sourceTree = "<group>";
+		};
+		A30B16AB1CFF0AA800BF8108 /* ElevenToast */ = {
+			isa = PBXGroup;
+			children = (
+				A30B16B01CFF0B8F00BF8108 /* UIImage+GIF.h */,
+				A30B16AE1CFF0B8F00BF8108 /* UIImage+GIF.m */,
+				A30B16AF1CFF0B8F00BF8108 /* UIView+Toast.h */,
+				A30B16B11CFF0B8F00BF8108 /* UIView+Toast.m */,
+				A30B16AC1CFF0AF400BF8108 /* loading.gif */,
+			);
+			name = ElevenToast;
+			path = ElevenToast/ElevenToast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30B16881CFF0A7900BF8108 /* LaunchScreen.storyboard in Resources */,
+				A30B16AD1CFF0AF400BF8108 /* loading.gif in Resources */,
 				A30B16851CFF0A7900BF8108 /* Assets.xcassets in Resources */,
 				A30B16831CFF0A7900BF8108 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +295,8 @@
 			files = (
 				A30B16801CFF0A7900BF8108 /* ViewController.m in Sources */,
 				A30B167D1CFF0A7900BF8108 /* AppDelegate.m in Sources */,
+				A30B16B21CFF0B8F00BF8108 /* UIImage+GIF.m in Sources */,
+				A30B16B31CFF0B8F00BF8108 /* UIView+Toast.m in Sources */,
 				A30B167A1CFF0A7900BF8108 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
